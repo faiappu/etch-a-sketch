@@ -1,0 +1,50 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Sets a default font */
+    line-height: 1.6; /* Improves readability */
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+    padding: 20px; /* Adds some padding around the content */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em; /* Space below headings */
+}
+
+/* Lists */
+ul {
+    list-style-type: none; /* Removes default bullets */
+    padding-left: 0; /* Removes padding */
+}
+
+li {
+    margin-bottom: 0.5em; /* Space between list items */
+}
+
+/* Links */
+a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better accessibility */
+}
+
+/* Buttons */
+button {
+    font-family: inherit; /* Inherit font from body */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Removes default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /*
