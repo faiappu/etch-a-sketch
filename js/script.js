@@ -32,7 +32,7 @@ const button = document.querySelector('button');
 button.addEventListener('click', function(e){
     let size = prompt('Enter new grid dimensions');
     size = Number(size);
-    if (isNaN(size) || size < 0) {
+    if (isNaN(size) || size <= 0) {
         throw new TypeError('not a Number');
     }
     else if ( size > 100 ){
