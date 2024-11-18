@@ -1,6 +1,12 @@
 const container = document.querySelector(".container");
 let gridSize;
 
+function getRandomColor() {
+    // Generate a random color in hexadecimal format
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    return randomColor;
+}
+
 function gridBuilder(size) {
     size = Number(size);
     gridSize = size * size;
@@ -20,7 +26,7 @@ function gridBuilder(size) {
 
     items.forEach(item => {
         item.addEventListener('mouseover', function(e) {
-            item.classList.add('hover');
+            item.style.backgroundColor = getRandomColor();
         });
     });
     console.log(size);
